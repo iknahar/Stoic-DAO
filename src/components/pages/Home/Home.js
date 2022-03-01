@@ -8,6 +8,10 @@ import Footer from '../Footer/Footer';
 import LatestBlog from '../LatestBlog/LatestBlog';
 import ProductDetails from '../ProductDetails/ProductDetails';
 import Expert from '../Expert/Expert';
+import Trending from '../Trending/Trending';
+import Token from '../Token/Token';
+import Roadmap from '../Roadmap/Roadmap';
+import Contact from '../Contact/Contact';
 
 const Home = () => {
   return (
@@ -69,8 +73,14 @@ const Home = () => {
       <AboutUs />
       <Benefit/>
       <ProductDetails/>
+      <Roadmap/>
       <Expert/>
+      <Token/>
+      <Trending/>
+   
+
       <LatestBlog/>
+      <Contact/>
       <Footer/>
     </div>
   );

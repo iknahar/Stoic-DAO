@@ -3,7 +3,7 @@ import { Image } from 'react-bootstrap';
 
 const LatestBlog = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mb-5">
       <p className="title text-center">Latest Blog Posts on Cryptocurrency</p>
       <div className="dag">
         <Image src={require('../../asset/dag.png')} />
@@ -17,7 +17,7 @@ const LatestBlog = () => {
       <div className='d-flex justify-content-between mx-5'>
       <div className="card " style={{ width: '320px' }}>
         <Image
-          src={require('../../asset/card/bit-coin-icon-design-3d-rendering.png')}
+          src={require('../../asset/card/blenderfileeblenderproject-2curencies-symboltree-currencies-moneybag-symbols-coinsblend.png')}
           alt="card image"
         />
         <div className="card-body">
@@ -67,7 +67,7 @@ const LatestBlog = () => {
       </div>
       <div className="card" style={{ width: '320px' }}>
         <Image
-          src={require('../../asset/card/bit-coin-icon-design-3d-rendering.png')}
+          src={require('../../asset/card/hashtag-coin-raining-crypto-umbrella-abundant-wealth-isolated-3d-illusration-render.png')}
           alt="card image"
         />
         <div className="card-body">

@@ -1,0 +1,19 @@
+.phone{
+    margin-top: -15px;
+}
+
+.btn-outline-secondary {
+    color: #4FD3D3;
+    border-color:#4FD3D3;
+}
+
+.btn-check:active+.btn-outline-secondary, .btn-check:checked+.btn-outline-secondary, .btn-outline-secondary.active, .btn-outline-secondary.dropdown-toggle.show, .btn-outline-secondary:active{
+    color: #4FD3D3!important;
+    border-color:#4FD3D3!important;
+}
+
+.submitbtn{
+    background-color: #4FD3D3!important;
+    border: none!important;
+    outline: none!important;
+}

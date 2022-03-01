@@ -1,0 +1,8 @@
+.token-bg{
+    background: url('../../asset/token-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.w-65{
+    width: 70%;
+}

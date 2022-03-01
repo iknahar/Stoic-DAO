@@ -9,12 +9,13 @@
   color: #0a164b;
   font-family: 'Montserrat', sans-serif;
 }
-.w-20{
-  width:85%;
+.w-20 {
+  width: 85%;
 }
-.benefit-div{
+.benefit-div {
+  
   width: 270px;
-  border: 1px solid #9683DE;
+  border: 1px solid #9683de;
   box-sizing: border-box;
   border-radius: 4px;
 }

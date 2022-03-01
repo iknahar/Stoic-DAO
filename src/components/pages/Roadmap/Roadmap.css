@@ -1,0 +1,13 @@
+.road-bg{
+    /* background: url('../../asset/line.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sm1{
+    margin-top: 80px!important;
+}
+
+.negM{
+    margin-top: -60px!important;
+}
