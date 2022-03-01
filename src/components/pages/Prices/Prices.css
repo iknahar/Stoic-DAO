@@ -1,0 +1,64 @@
+.btn-group1 {
+  color: #49496F!important;
+  background: #ffffff!important;
+  border: 1px solid #ffffff!important;
+  box-sizing: border-box!important;
+  border-radius: 3px!important;
+}
+
+.btn-check:active+.btn-group1, .btn-check:checked+.btn-group1, .btn-group1.active, .btn-group1:active, .show>.btn-group1.dropdown-toggle {
+    color: #fff!important;
+    background-color: #0e096d!important;
+    border-color: #0e096d!important;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+.btn-check:focus+.btn-group1, .btn-group1:focus {
+    color: #fff!important;
+    background-color: #0e096d!important;
+    border-color: #0e096d!important;
+    box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}
+
+.formstyle{
+    color:#49496F!important;
+}
+
+.CalcRes{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 44px;
+text-transform: uppercase;
+text-align: center;
+color: #4FD3D3;
+margin-top: 20px;
+}
+
+.cardLprice{
+    font-weight: 600;
+font-size: 30px;
+line-height: 40px;
+color: #9683DE;
+}
+
+.cardLtext1{
+    font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 26px;
+color: #0A164B;
+}
+
+.cardLtext2{
+    font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color: #49496F;
+}

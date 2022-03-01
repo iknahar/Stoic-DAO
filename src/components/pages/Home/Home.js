@@ -12,6 +12,7 @@ import Trending from '../Trending/Trending';
 import Token from '../Token/Token';
 import Roadmap from '../Roadmap/Roadmap';
 import Contact from '../Contact/Contact';
+import Prices from '../Prices/Prices';
 
 const Home = () => {
   return (
@@ -76,6 +77,7 @@ const Home = () => {
       <Roadmap/>
       <Expert/>
       <Token/>
+      <Prices/>
       <Trending/>
    
 
