@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 .logo-bg{
     background: url(../../asset/logo-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.logotext{
+font-family: Poppins;
+font-weight: 600;
+font-size: 20px;
+line-height: 60px;
+text-transform: capitalize;
+color: #0A164B;
 }
