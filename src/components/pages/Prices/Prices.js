@@ -83,7 +83,7 @@ let result;
       <div className="d-flex border p-4 justify-content-between align-items-center flex-wrap">
         <ButtonGroup aria-label="Basic example">
           <Button
-            className="btn-group1 active"
+            className="btn-group1"
             // name="BTC"
             // value="15200.35"
             onClick={() => HandleResult('BTC', 15200.35)}
