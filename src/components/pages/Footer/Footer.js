@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footer-bg">
       <div className="container">
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between flex-wrap">
           <div className="">
             <Image src={require('../../asset/logo.png')} alt="logo image" />
             <p>

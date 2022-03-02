@@ -160,7 +160,7 @@ const Prices = () => {
         <br />
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
-      <div className="m-5  d-flex justify-content-center">
+      <div className="m-5  d-flex justify-content-center flex-wrap">
         <div>
           <a href="/" className="text-decoration-none text-dark pe-5">
             BUYING RATE
@@ -177,7 +177,7 @@ const Prices = () => {
 
       {/* ---------Main Calculation Part Starts---------------- */}
 
-      <div className="d-flex border p-4 justify-content-between align-items-center">
+      <div className="d-flex border p-4 justify-content-between align-items-center flex-wrap">
         <ButtonGroup aria-label="Basic example">
           <Button className="btn-group1 active" onClick={HandleResultBTC}>
             BTC
@@ -240,7 +240,7 @@ const Prices = () => {
 
       {/* ---------Cards---------------- */}
 
-      <div className="d-flex justify-content-between my-5">
+      <div className="d-flex justify-content-between my-5 flex-wrap">
         {/* ---------Bitcoin Card---------------- */}
 
         <div className="benefit-div p-3 m-3 text-center">

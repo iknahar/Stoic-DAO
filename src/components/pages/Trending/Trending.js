@@ -14,8 +14,8 @@ const Trending = () => {
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
       <Container>
-      <div className='w-75 my-5'>
-          <Image src={require('../../asset/chart.png')} alt='' />
+      <div className='trendImage my-5'>
+          <Image src={require('../../asset/chart.png')} alt='' className='w-75'/>
       </div>
       </Container>
     </div>
