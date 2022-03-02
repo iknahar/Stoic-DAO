@@ -59,6 +59,7 @@ const Benefit = () => {
       </p>
       <Box sx={{ width: "100%" }}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <div className="tab-div">
           <Tabs
             value={value}
             onChange={handleChange}
@@ -67,6 +68,7 @@ const Benefit = () => {
             <Tab label="Business" {...a11yProps(0)} />
             <Tab label="Menu" {...a11yProps(1)} />
           </Tabs>
+          </div>
         </Box>
         <TabPanel value={value} index={0}>
           <Business />

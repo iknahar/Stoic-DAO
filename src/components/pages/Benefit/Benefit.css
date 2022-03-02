@@ -19,3 +19,7 @@
   /* box-sizing: border-box; */
   border-radius: 4px;
 }
+
+.tab-div{
+  margin-left:30vw !important;
+}

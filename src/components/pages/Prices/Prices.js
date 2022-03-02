@@ -7,9 +7,9 @@ import ethereum from '../../asset/logicsection/ETHEREUM.svg';
 import lite from '../../asset/logicsection/LITECOIN.svg';
 
 const Prices = () => {
-let result;
+  let fieldparse = 1;
+  let result;
   const HandleResult = (name, value) => {
-    let fieldValue = 1;
     const itemText = document.getElementById('cryp');
     let cryptoText = name;
     itemText.innerText = cryptoText;
@@ -19,16 +19,12 @@ let result;
     item.innerText = textParse;
 
     // updating total
-    const field = document.getElementById('input-field');
-    fieldValue = field.value;
-    let fieldparse = parseFloat(fieldValue);
+    let field = document.getElementById('input-field');
+    let fieldValue = field.value;
+    fieldparse = parseFloat(fieldValue);
     result = textParse * fieldparse;
 
-    //  ----------Trying to set the value from input field to display
-
-    let changabelNum = document.getElementById('dnum');
-    changabelNum.innerText = fieldparse;
-
+    // changabelNum.innerText = 1;
 
     console.log(cryptoText);
     console.log(textParse);
@@ -36,7 +32,6 @@ let result;
     console.log(result);
 
     return {
- 
       result,
       // textParse,
       // item,
@@ -45,11 +40,13 @@ let result;
   };
 
   const handleCalc = () => {
+    //  ----------Trying to set the value from input field to display
 
-        let finVal = document.getElementById('dresult');
-        finVal.innerText = result;
+    let changabelNum = document.getElementById('dnum');
+    changabelNum.innerText = fieldparse;
 
-    
+    let finVal = document.getElementById('dresult');
+    finVal.innerText = result;
   };
 
   return (
@@ -141,12 +138,12 @@ let result;
         </ButtonGroup>
 
         <input
-          type="text"
+          type="number"
           style={{ width: '160px' }}
           placeholder="Enter Amount"
           id="input-field"
-          aria-label="Username"
           aria-describedby="basic-addon1"
+          min="1"
         />
 
         <ButtonGroup aria-label="Basic example">
@@ -155,7 +152,7 @@ let result;
         </ButtonGroup>
 
         <div className="pe-3">
-          <Button className="nav-btn" onClick={handleCalc}>
+          <Button id="convert" className="nav-btn" onClick={handleCalc}>
             Convert
           </Button>
         </div>

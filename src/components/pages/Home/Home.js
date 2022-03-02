@@ -18,12 +18,12 @@ const Home = () => {
   return (
     <div>
       <div className="hero-bg">
-      <Navbar bg="light" expand="lg">
-          <Container>
+      <Navbar bg="light" expand="lg" >
+          <Container >
             <Navbar.Brand href="#home">
               <Image
                 src={require('../../asset/logo.png')}
-                style={{ width: '244.91px' }}
+                style={{ height: '49px' }}
               />{' '}
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
