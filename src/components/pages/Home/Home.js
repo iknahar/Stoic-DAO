@@ -46,11 +46,11 @@ const Home = () => {
 
         {/* Hero section  */}
         <div className="container content-bg">
-          <small>Trade crypto like it's meant to be</small>
-          <h1>
-            Buy And sell <br /> Digital Currency
+          <small className='text2 mt-1'>Trade crypto like it's meant to be</small>
+          <h1 className='title1 my-4'>
+            <b>Buy And sell <br /> Digital Currency</b>
           </h1>
-          <p>
+          <p className='text2 my-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
             aliquet <br />
             turpis elit elit natoque varius eget facilisi. Amet rhoncus sed
