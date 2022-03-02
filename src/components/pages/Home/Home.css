@@ -24,3 +24,11 @@
   color: #0a164b;
   font-family: 'Montserrat', sans-serif;
 }
+@media only screen and (max-width: 1920px) {
+ .content-bg {
+   padding: 15rem;
+  }
+  .middlenav{
+    margin-left: 14rem;
+  }
+}
