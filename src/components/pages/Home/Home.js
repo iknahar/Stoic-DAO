@@ -45,7 +45,7 @@ const Home = () => {
         </Navbar>
 
         {/* Hero section  */}
-        <div className="content-bg">
+        <div className="container content-bg">
           <small>Trade crypto like it's meant to be</small>
           <h1>
             Buy And sell <br /> Digital Currency

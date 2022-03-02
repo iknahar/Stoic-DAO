@@ -14,8 +14,8 @@
 }
 .benefit-div {
   
-  width: 270px;
+  width: 250px;
   border: 1px solid #9683de;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   border-radius: 4px;
 }

@@ -171,10 +171,10 @@ let result;
 
       {/* ---------Cards---------------- */}
 
-      <div className="d-flex justify-content-between my-5">
+      <div className="d-flex justify-content-between my-5 flex-wrap">
         {/* ---------Bitcoin Card---------------- */}
 
-        <div className="benefit-div p-3 m-3 text-center">
+        <div className="benefit-div p-3 m-1 text-center">
           <img src={bitcoin} alt="" />
           <p className="cardLprice mt-3">15,025.00</p>
           <p className="cardLtext1 m-1">Best Price of 1 bitcoin</p>
@@ -194,7 +194,7 @@ let result;
         </div>
         {/* ---------Ethereum Card---------------- */}
 
-        <div className="benefit-div p-3 m-3 text-center">
+        <div className="benefit-div p-3 m-1 text-center">
           <img src={ethereum} alt="" />
           <p className="cardLprice mt-3">25,524.00</p>
           <p className="cardLtext1 m-1">Best Price of 1 ETHEREUM</p>
@@ -214,7 +214,7 @@ let result;
         </div>
         {/* --------- LITECOIN Card---------------- */}
 
-        <div className="benefit-div p-3 m-3 text-center">
+        <div className="benefit-div p-3 m-1 text-center">
           <img src={lite} alt="" />
           <p className="cardLprice mt-3">25,000.00</p>
           <p className="cardLtext1 m-1">Best Price of 1 LITECOIN</p>
@@ -234,7 +234,7 @@ let result;
         </div>
         {/* ---------DASH Card---------------- */}
 
-        <div className="benefit-div p-3 m-3 text-center">
+        <div className="benefit-div p-3 m-1 text-center">
           <img src={dash} alt="" />
           <p className="cardLprice mt-3">25,524.00</p>
           <p className="cardLtext1 m-1">Best Price of 1 DASH</p>
