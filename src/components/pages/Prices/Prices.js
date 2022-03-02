@@ -7,7 +7,7 @@ import ethereum from '../../asset/logicsection/ETHEREUM.svg';
 import lite from '../../asset/logicsection/LITECOIN.svg';
 
 const Prices = () => {
-  let fieldparse = 1;
+  let fieldparse;
   let result;
   const HandleResult = (name, value) => {
     const itemText = document.getElementById('cryp');
@@ -18,13 +18,16 @@ const Prices = () => {
     let textParse = parseFloat(text);
     item.innerText = textParse;
 
+    
     // updating total
     let field = document.getElementById('input-field');
     let fieldValue = field.value;
     fieldparse = parseFloat(fieldValue);
     result = textParse * fieldparse;
 
-    // changabelNum.innerText = 1;
+
+    let changabelNum = document.getElementById('dnum');
+    changabelNum.innerText = 1;
 
     console.log(cryptoText);
     console.log(textParse);
@@ -144,6 +147,7 @@ const Prices = () => {
           id="input-field"
           aria-describedby="basic-addon1"
           min="1"
+          required
         />
 
         <ButtonGroup aria-label="Basic example">
