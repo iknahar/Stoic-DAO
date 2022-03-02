@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  Button,
-  ButtonGroup,
-  Image,
-} from 'react-bootstrap';
+import { Button, ButtonGroup, Image } from 'react-bootstrap';
 import './Prices.css';
 import bitcoin from '../../asset/logicsection/bitcoin.svg';
 import dash from '../../asset/logicsection/DASH.svg';
@@ -11,142 +7,51 @@ import ethereum from '../../asset/logicsection/ETHEREUM.svg';
 import lite from '../../asset/logicsection/LITECOIN.svg';
 
 const Prices = () => {
-  const HandleResultBTC = (e) => {
+let result;
+  const HandleResult = (name, value) => {
+    let fieldValue = 1;
     const itemText = document.getElementById('cryp');
-    let cryptoText = 'BTC';
+    let cryptoText = name;
     itemText.innerText = cryptoText;
-    const item = document.getElementById('result');
-    let text = '15200.35';
+    const item = document.getElementById('dresult');
+    let text = value;
     let textParse = parseFloat(text);
     item.innerText = textParse;
+
+    // updating total
+    const field = document.getElementById('input-field');
+    fieldValue = field.value;
+    let fieldparse = parseFloat(fieldValue);
+    result = textParse * fieldparse;
+
+    //  ----------Trying to set the value from input field to display
+
+    let changabelNum = document.getElementById('dnum');
+    changabelNum.innerText = fieldparse;
+
+
+    console.log(cryptoText);
+    console.log(textParse);
+    console.log(item);
+    console.log(result);
+
     return {
-      textParse,
-      item,
-    };
-  };
-  const HandleResultETH = () => {
-    const itemText = document.getElementById('cryp');
-    let cryptoText = 'ETH';
-    itemText.innerText = cryptoText;
-    const item = document.getElementById('result');
-    let text = '2950.45';
-    let textParse = parseFloat(text);
-    item.innerText = textParse;
-    return textParse;
-  };
-  const HandleResultXMR = () => {
-    const itemText = document.getElementById('cryp');
-    let cryptoText = 'XMR';
-    itemText.innerText = cryptoText;
-    const item = document.getElementById('result');
-    let text = '179.35';
-    let textParse = parseFloat(text);
-    item.innerText = textParse;
-    return textParse;
-  };
-  const HandleResultZEC = () => {
-    const itemText = document.getElementById('cryp');
-    let cryptoText = 'ZEC';
-    itemText.innerText = cryptoText;
-    const item = document.getElementById('result');
-    let text = '119.00';
-    let textParse = parseFloat(text);
-    item.innerText = textParse;
-    return textParse;
-  };
-  const HandleResultETC = () => {
-    const itemText = document.getElementById('cryp');
-    let cryptoText = 'ETC';
-    itemText.innerText = cryptoText;
-    const item = document.getElementById('result');
-    let text = '11.22';
-    let textParse = parseFloat(text);
-    item.innerText = textParse;
-    return textParse;
-  };
-  const HandleResultDASH = () => {
-    const itemText = document.getElementById('cryp');
-    let cryptoText = 'DASH';
-    itemText.innerText = cryptoText;
-    const item = document.getElementById('result');
-    let text = '98.46';
-    let textParse = parseFloat(text);
-    item.innerText = textParse;
-    return textParse;
-  };
-  const HandleResultLTC = () => {
-    const itemText = document.getElementById('cryp');
-    let cryptoText = 'LTC';
-    itemText.innerText = cryptoText;
-    const item = document.getElementById('result');
-    let text = '113.11';
-    let textParse = parseFloat(text);
-    item.innerText = textParse;
-    return {
-      textParse,
-      cryptoText,
+ 
+      result,
+      // textParse,
+      // item,
+      // cryptoText,
     };
   };
 
   const handleCalc = () => {
-    const field = document.getElementById('input-field');
-    let fieldValue = field.value;
-    let fieldparse = parseFloat(fieldValue);
-    let getItem = HandleResultBTC();
-    let getNum = getItem.textParse;
-    let result = getNum * fieldparse;
-    let changabelText = getItem.item;
-    let setText = result;
-    changabelText.innerText = setText;
+
+        let finVal = document.getElementById('dresult');
+        finVal.innerText = result;
+
+    
   };
-  /*  const handleCalc=()=>{
-        const field=document.getElementById('input-field');
-        let fieldValue=field.value ;
-        let fieldparse=parseFloat(fieldValue);
-        let getItem=HandleResult();
-        let result=getItem * fieldparse;
-        console.log(result);
-    }
-    const handleCalc=()=>{
-        const field=document.getElementById('input-field');
-        let fieldValue=field.value ;
-        let fieldparse=parseFloat(fieldValue);
-        let getItem=HandleResultBTC();
-        let result=getItem * fieldparse;
-        console.log(result);
-    }
-    const handleCalc=()=>{
-        const field=document.getElementById('input-field');
-        let fieldValue=field.value ;
-        let fieldparse=parseFloat(fieldValue);
-        let getItem=HandleResultBTC();
-        let result=getItem * fieldparse;
-        console.log(result);
-    }
-    const handleCalc=()=>{
-        const field=document.getElementById('input-field');
-        let fieldValue=field.value ;
-        let fieldparse=parseFloat(fieldValue);
-        let getItem=HandleResultBTC();
-        let result=getItem * fieldparse;
-        console.log(result);
-    }
-    const handleCalc=()=>{
-        const field=document.getElementById('input-field');
-        let fieldValue=field.value ;
-        let fieldparse=parseFloat(fieldValue);
-        let getItem=HandleResultBTC();
-        let result=getItem * fieldparse;
-        console.log(result);
-    }
-    const handleCalc=()=>{
-        const field=document.getElementById('input-field');
-        let fieldValue=field.value ;
-        let fieldparse=parseFloat(fieldValue);
-        let getItem=HandleResultBTC();
-        let result=getItem * fieldparse;
-        console.log(result);
-    } */
+
   return (
     <div className="container mb-5">
       <p className="title text-center">Find the Best Cryptocurrency Prices</p>
@@ -177,36 +82,64 @@ const Prices = () => {
 
       <div className="d-flex border p-4 justify-content-between align-items-center flex-wrap">
         <ButtonGroup aria-label="Basic example">
-          <Button className="btn-group1 active" onClick={HandleResultBTC}>
+          <Button
+            className="btn-group1 active"
+            // name="BTC"
+            // value="15200.35"
+            onClick={() => HandleResult('BTC', 15200.35)}
+          >
             BTC
           </Button>
-          <Button className="btn-group1" onClick={HandleResultETH}>
+          <Button
+            className="btn-group1"
+            // name="ETH"
+            // value="2950.45"
+            onClick={() => HandleResult('ETH', 2950.45)}
+          >
             ETH
           </Button>
-          <Button className="btn-group1" onClick={HandleResultXMR}>
+          <Button
+            className="btn-group1"
+            name="XMR"
+            value="179.35"
+            onClick={() => HandleResult('XMR', 179.35)}
+          >
             XMR
           </Button>
-          <Button className="btn-group1" onClick={HandleResultZEC}>
+          <Button
+            className="btn-group1"
+            name="ZEC"
+            value="119.00"
+            onClick={() => HandleResult('ZEC', 119.0)}
+          >
             ZEC
           </Button>
-          <Button className="btn-group1" onClick={HandleResultETC}>
+          <Button
+            className="btn-group1"
+            name="ETC"
+            value="11.22"
+            onClick={() => HandleResult('ETC', 11.22)}
+          >
             ETC
           </Button>
-          <Button className="btn-group1" onClick={HandleResultDASH}>
+          <Button
+            className="btn-group1"
+            name="DASH"
+            value="98.46"
+            onClick={() => HandleResult('DASH', 98.46)}
+          >
             DASH
           </Button>
-          <Button className="btn-group1" onClick={HandleResultLTC}>
+          <Button
+            className="btn-group1"
+            name="LTC"
+            value="113.11"
+            onClick={() => HandleResult('LTC', 113.11)}
+          >
             LTC
           </Button>
         </ButtonGroup>
-        {/* 
-        <InputGroup style={{ width: '160px' }} id='input-field'>
-          <FormControl
-            aria-label="Default"
-            
-            aria-describedby="inputGroup-sizing-default"
-          />
-        </InputGroup> */}
+
         <input
           type="text"
           style={{ width: '160px' }}
@@ -231,9 +164,9 @@ const Prices = () => {
       {/* ---------Main Calculation Result---------------- */}
       <h2 className="CalcRes ">
         <span>
-          1 <span id="cryp"> BTC</span> =$
+          <span id="dnum">1</span> <span id="cryp"> BTC</span> =$
         </span>{' '}
-        <span id="result">15200.35</span>
+        <span id="dresult">15200.35</span>
       </h2>
 
       {/* ---------Cards---------------- */}
