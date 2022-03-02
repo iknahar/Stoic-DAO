@@ -2,8 +2,6 @@ import React from 'react';
 import {
   Button,
   ButtonGroup,
-  FormControl,
-  InputGroup,
   Image,
 } from 'react-bootstrap';
 import './Prices.css';

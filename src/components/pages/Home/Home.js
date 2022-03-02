@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div>
       <div className="hero-bg">
-        <Navbar variant="light">
+      <Navbar bg="light" expand="lg">
           <Container>
             <Navbar.Brand href="#home">
               <Image
@@ -26,18 +26,21 @@ const Home = () => {
                 style={{ width: '244.91px' }}
               />{' '}
             </Navbar.Brand>
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#home">About</Nav.Link>
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#features">Product</Nav.Link>
-              <Nav.Link href="#pricing">Roadmap</Nav.Link>
-              <Nav.Link href="#pricing">Team</Nav.Link>
-              <Nav.Link href="#pricing">Token</Nav.Link>
-              <Nav.Link href="#pricing">Blog</Nav.Link>
-              <Nav.Link href="#pricing">Contact</Nav.Link>
-              <Button className="nav-btn">Buy Token</Button>
-            </Nav>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#home">About</Nav.Link>
+                <Nav.Link href="#features">Features</Nav.Link>
+                <Nav.Link href="#features">Product</Nav.Link>
+                <Nav.Link href="#pricing">Roadmap</Nav.Link>
+                <Nav.Link href="#pricing">Team</Nav.Link>
+                <Nav.Link href="#pricing">Token</Nav.Link>
+                <Nav.Link href="#pricing">Blog</Nav.Link>
+                <Nav.Link href="#pricing">Contact</Nav.Link>
+                <Button className="nav-btn">Buy Token</Button>
+              </Nav>
+            </Navbar.Collapse>
           </Container>
         </Navbar>
 
@@ -72,18 +75,17 @@ const Home = () => {
       </div>
       <LogoSec />
       <AboutUs />
-      <Benefit/>
-      <ProductDetails/>
-      <Roadmap/>
-      <Expert/>
-      <Token/>
-      <Prices/>
-      <Trending/>
-   
+      <Benefit />
+      <ProductDetails />
+      <Roadmap />
+      <Expert />
+      <Token />
+      <Prices />
+      <Trending />
 
-      <LatestBlog/>
-      <Contact/>
-      <Footer/>
+      <LatestBlog />
+      <Contact />
+      <Footer />
     </div>
   );
 };
