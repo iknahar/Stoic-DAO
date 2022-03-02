@@ -238,7 +238,7 @@ const Prices = () => {
 
       {/* ---------Cards---------------- */}
 
-      <div className="d-flex justify-content-between my-5 flex-wrap">
+      <div className="d-flex justify-content-between my-5">
         {/* ---------Bitcoin Card---------------- */}
 
         <div className="benefit-div p-3 m-3 text-center">

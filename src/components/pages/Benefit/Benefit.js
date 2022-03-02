@@ -29,7 +29,7 @@ const benefit = () => {
         </div>
       </div>
       <div>
-        <div className='d-flex justify-content-between flex-wrap'>
+        <div className='d-flex justify-content-between'>
           <div className="benefit-div p-3 m-3 text-center" style={{backgroundColor:'#0A164B',color:'white'}}>
             <img src={require('../../asset/Vector (1).png')} alt='' />
             <p style={{color:'#9683DE'}}>
