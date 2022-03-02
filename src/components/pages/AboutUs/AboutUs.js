@@ -4,7 +4,7 @@ import './AboutUs.css';
 
 const AboutUs = () => {
   return (
-    <div className="py-5">
+    <div className="py-5 about-bg">
       <p className="title text-center">about us</p>
       <div className="dag">
         <Image src={require('../../asset/dag.png')} />

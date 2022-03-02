@@ -43,3 +43,8 @@ li span {
     margin-top: -25px;
     margin-bottom: 40px;
 }
+.about-bg{
+  background: url('../../asset/about-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

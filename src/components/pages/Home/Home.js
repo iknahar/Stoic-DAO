@@ -17,11 +17,12 @@ import Prices from '../Prices/Prices';
 const Home = () => {
   return (
     <div>
-      <div className="hero-bg">
-      <Navbar bg="light" expand="lg" >
-          <Container >
+      <div className="hero-bg justify-content-center">
+        <Container>
+          <Navbar expand="lg" className="middlenav">
             <Navbar.Brand href="#home">
               <Image
+                className="px-2"
                 src={require('../../asset/logo.png')}
                 style={{ height: '49px' }}
               />{' '}
@@ -41,16 +42,20 @@ const Home = () => {
                 <Button className="nav-btn">Buy Token</Button>
               </Nav>
             </Navbar.Collapse>
-          </Container>
-        </Navbar>
+          </Navbar>
+        </Container>
 
         {/* Hero section  */}
         <div className="container content-bg">
-          <small className='text2 mt-1'>Trade crypto like it's meant to be</small>
-          <h1 className='title1 my-4'>
-            <b>Buy And sell <br /> Digital Currency</b>
+          <small className="text2 mt-1">
+            Trade crypto like it's meant to be
+          </small>
+          <h1 className="title1 my-4">
+            <b>
+              Buy And sell <br /> Digital Currency
+            </b>
           </h1>
-          <p className='text2 my-4'>
+          <p className="text2 my-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
             aliquet <br />
             turpis elit elit natoque varius eget facilisi. Amet rhoncus sed
