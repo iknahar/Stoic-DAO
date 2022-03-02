@@ -13,7 +13,7 @@
 .show > .btn-group1.dropdown-toggle {
   color: #fff !important;
   background-color: #0e096d !important;
-  border-color: #0e096d !important;
+  border: none !important;
 }
 [type='button']:not(:disabled),
 [type='reset']:not(:disabled),

@@ -1,6 +1,10 @@
 import React from 'react';
 import {
-  Button, ButtonGroup, FormControl, InputGroup, Image
+  Button,
+  ButtonGroup,
+  FormControl,
+  InputGroup,
+  Image,
 } from 'react-bootstrap';
 import './Prices.css';
 import bitcoin from '../../asset/logicsection/bitcoin.svg';
@@ -8,100 +12,96 @@ import dash from '../../asset/logicsection/DASH.svg';
 import ethereum from '../../asset/logicsection/ETHEREUM.svg';
 import lite from '../../asset/logicsection/LITECOIN.svg';
 
-
 const Prices = () => {
-    const HandleResultBTC=(e)=>{
-        const itemText=document.getElementById('cryp')
-        let cryptoText='BTC';
-        itemText.innerText=cryptoText;
-        const item=document.getElementById('result');
-        let text='15200.35';
-        let textParse=parseFloat(text);
-       item.innerText=textParse; 
-       return textParse;
-        
-    }
-    const HandleResultETH=()=>{
-        const itemText=document.getElementById('cryp')
-        let cryptoText='ETH';
-        itemText.innerText=cryptoText;
-        const item=document.getElementById('result');
-        let text='2950.45';
-        let textParse=parseFloat(text);
-        item.innerText=textParse; 
-        return textParse;
-        
-    }
-    const HandleResultXMR=()=>{
-        const itemText=document.getElementById('cryp')
-        let cryptoText='XMR';
-        itemText.innerText=cryptoText;
-        const item=document.getElementById('result');
-        let text='179.35';
-        let textParse=parseFloat(text);
-        item.innerText=textParse;
-        return textParse; 
-        
-    }
-    const HandleResultZEC=()=>{
-        const itemText=document.getElementById('cryp')
-        let cryptoText='ZEC';
-        itemText.innerText=cryptoText;
-        const item=document.getElementById('result');
-        let text='119.00';
-        let textParse=parseFloat(text);
-        item.innerText=textParse; 
-        return textParse;
-        
-    }
-    const HandleResultETC=()=>{
-        const itemText=document.getElementById('cryp')
-        let cryptoText='ETC';
-        itemText.innerText=cryptoText;
-        const item=document.getElementById('result');
-        let text='11.22';
-        let textParse=parseFloat(text);
-        item.innerText=textParse; 
-        return textParse;
-        
-    }
-    const HandleResultDASH=()=>{
-        const itemText=document.getElementById('cryp')
-        let cryptoText='DASH';
-        itemText.innerText=cryptoText;
-        const item=document.getElementById('result');
-        let text='98.46';
-        let textParse=parseFloat(text);
-        item.innerText=textParse; 
-        return textParse;
-        
-    }
-    const HandleResultLTC=()=>{
-        const itemText=document.getElementById('cryp')
-        let cryptoText='LTC';
-        itemText.innerText=cryptoText;
-        const item=document.getElementById('result');
-        let text='113.11';
-        let textParse=parseFloat(text);
-        item.innerText=textParse; 
-        return {
-            textParse,cryptoText
-        };
-         
-        
-    }
+  const HandleResultBTC = (e) => {
+    const itemText = document.getElementById('cryp');
+    let cryptoText = 'BTC';
+    itemText.innerText = cryptoText;
+    const item = document.getElementById('result');
+    let text = '15200.35';
+    let textParse = parseFloat(text);
+    item.innerText = textParse;
+    return {
+      textParse,
+      item,
+    };
+  };
+  const HandleResultETH = () => {
+    const itemText = document.getElementById('cryp');
+    let cryptoText = 'ETH';
+    itemText.innerText = cryptoText;
+    const item = document.getElementById('result');
+    let text = '2950.45';
+    let textParse = parseFloat(text);
+    item.innerText = textParse;
+    return textParse;
+  };
+  const HandleResultXMR = () => {
+    const itemText = document.getElementById('cryp');
+    let cryptoText = 'XMR';
+    itemText.innerText = cryptoText;
+    const item = document.getElementById('result');
+    let text = '179.35';
+    let textParse = parseFloat(text);
+    item.innerText = textParse;
+    return textParse;
+  };
+  const HandleResultZEC = () => {
+    const itemText = document.getElementById('cryp');
+    let cryptoText = 'ZEC';
+    itemText.innerText = cryptoText;
+    const item = document.getElementById('result');
+    let text = '119.00';
+    let textParse = parseFloat(text);
+    item.innerText = textParse;
+    return textParse;
+  };
+  const HandleResultETC = () => {
+    const itemText = document.getElementById('cryp');
+    let cryptoText = 'ETC';
+    itemText.innerText = cryptoText;
+    const item = document.getElementById('result');
+    let text = '11.22';
+    let textParse = parseFloat(text);
+    item.innerText = textParse;
+    return textParse;
+  };
+  const HandleResultDASH = () => {
+    const itemText = document.getElementById('cryp');
+    let cryptoText = 'DASH';
+    itemText.innerText = cryptoText;
+    const item = document.getElementById('result');
+    let text = '98.46';
+    let textParse = parseFloat(text);
+    item.innerText = textParse;
+    return textParse;
+  };
+  const HandleResultLTC = () => {
+    const itemText = document.getElementById('cryp');
+    let cryptoText = 'LTC';
+    itemText.innerText = cryptoText;
+    const item = document.getElementById('result');
+    let text = '113.11';
+    let textParse = parseFloat(text);
+    item.innerText = textParse;
+    return {
+      textParse,
+      cryptoText,
+    };
+  };
 
-    const handleCalc=()=>{
-        const field=document.getElementById('input-field');
-        let fieldValue=field.value ;
-        let fieldparse=parseFloat(fieldValue);
-        
-        let getItem=HandleResultBTC();
-
-        let result=getItem * fieldparse;
-        console.log(result);
-    }
-   /*  const handleCalc=()=>{
+  const handleCalc = () => {
+    const field = document.getElementById('input-field');
+    let fieldValue = field.value;
+    let fieldparse = parseFloat(fieldValue);
+    let getItem = HandleResultBTC();
+    let getNum = getItem.textParse;
+    let result = getNum * fieldparse;
+    let changabelText = getItem.item;
+    let setText = result;
+    changabelText.innerText = setText;
+  };
+  /*  const handleCalc=()=>{
         const field=document.getElementById('input-field');
         let fieldValue=field.value ;
         let fieldparse=parseFloat(fieldValue);
@@ -179,15 +179,29 @@ const Prices = () => {
 
       <div className="d-flex border p-4 justify-content-between align-items-center">
         <ButtonGroup aria-label="Basic example">
-          <Button className="btn-group1 active" onClick={HandleResultBTC}>BTC</Button>
-          <Button className="btn-group1"  onClick={HandleResultETH}>ETH</Button>
-          <Button className="btn-group1"  onClick={HandleResultXMR}>XMR</Button>
-          <Button className="btn-group1"  onClick={HandleResultZEC}>ZEC</Button>
-          <Button className="btn-group1"  onClick={HandleResultETC}>ETC</Button>
-          <Button className="btn-group1"  onClick={HandleResultDASH}>DASH</Button>
-          <Button className="btn-group1"  onClick={HandleResultLTC}>LTC</Button>
+          <Button className="btn-group1 active" onClick={HandleResultBTC}>
+            BTC
+          </Button>
+          <Button className="btn-group1" onClick={HandleResultETH}>
+            ETH
+          </Button>
+          <Button className="btn-group1" onClick={HandleResultXMR}>
+            XMR
+          </Button>
+          <Button className="btn-group1" onClick={HandleResultZEC}>
+            ZEC
+          </Button>
+          <Button className="btn-group1" onClick={HandleResultETC}>
+            ETC
+          </Button>
+          <Button className="btn-group1" onClick={HandleResultDASH}>
+            DASH
+          </Button>
+          <Button className="btn-group1" onClick={HandleResultLTC}>
+            LTC
+          </Button>
         </ButtonGroup>
-{/* 
+        {/* 
         <InputGroup style={{ width: '160px' }} id='input-field'>
           <FormControl
             aria-label="Default"
@@ -195,7 +209,14 @@ const Prices = () => {
             aria-describedby="inputGroup-sizing-default"
           />
         </InputGroup> */}
-        <input type="text" style={{ width: '160px' }} placeholder="Enter Amount"   id='input-field'  aria-label="Username" aria-describedby="basic-addon1"/>
+        <input
+          type="text"
+          style={{ width: '160px' }}
+          placeholder="Enter Amount"
+          id="input-field"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
 
         <ButtonGroup aria-label="Basic example">
           <Button className="btn-group1">EUR</Button>
@@ -203,18 +224,24 @@ const Prices = () => {
         </ButtonGroup>
 
         <div className="pe-3">
-          <Button className="nav-btn" onClick={handleCalc}>Convert</Button>
+          <Button className="nav-btn" onClick={handleCalc}>
+            Convert
+          </Button>
         </div>
       </div>
 
       {/* ---------Main Calculation Result---------------- */}
-      <h2 className="CalcRes " ><span>1 <span id='cryp'> BTC</span> =$</span> <span id='result'>15200.35</span></h2>
+      <h2 className="CalcRes ">
+        <span>
+          1 <span id="cryp"> BTC</span> =$
+        </span>{' '}
+        <span id="result">15200.35</span>
+      </h2>
 
       {/* ---------Cards---------------- */}
-     
-      <div className="d-flex justify-content-between my-5">
 
-           {/* ---------Bitcoin Card---------------- */}
+      <div className="d-flex justify-content-between my-5">
+        {/* ---------Bitcoin Card---------------- */}
 
         <div className="benefit-div p-3 m-3 text-center">
           <img src={bitcoin} alt="" />
@@ -234,7 +261,7 @@ const Prices = () => {
             />
           </svg>
         </div>
-           {/* ---------Ethereum Card---------------- */}
+        {/* ---------Ethereum Card---------------- */}
 
         <div className="benefit-div p-3 m-3 text-center">
           <img src={ethereum} alt="" />
@@ -254,12 +281,12 @@ const Prices = () => {
             />
           </svg>
         </div>
-           {/* --------- LITECOIN Card---------------- */}
+        {/* --------- LITECOIN Card---------------- */}
 
         <div className="benefit-div p-3 m-3 text-center">
           <img src={lite} alt="" />
           <p className="cardLprice mt-3">25,000.00</p>
-          <p className="cardLtext1 m-1">Best Price of 1  LITECOIN</p>
+          <p className="cardLtext1 m-1">Best Price of 1 LITECOIN</p>
           <p className="cardLtext2">FOUND AT KRAEN</p>
           <svg
             width="41"
@@ -274,7 +301,7 @@ const Prices = () => {
             />
           </svg>
         </div>
-           {/* ---------DASH Card---------------- */}
+        {/* ---------DASH Card---------------- */}
 
         <div className="benefit-div p-3 m-3 text-center">
           <img src={dash} alt="" />
