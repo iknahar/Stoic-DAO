@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './Benefit.css'
 
 const Business = () => {
   return (
-    <div className="d-flex justify-content-between flex-wrap">
+    <div className="d-flex justify-content-between flex-wrap busy">
         <div
             className="benefit-div p-3 m-1 text-center"
             style={{ backgroundColor: "#0A164B", color: "white" }}

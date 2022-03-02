@@ -52,7 +52,7 @@ const Prices = () => {
 
   return (
     <div className="about-bg p-5">
-      <div className="container mb-5">
+      <div className="container ">
         <p className="title text-center">Find the Best Cryptocurrency Prices</p>
         <div className="dag">
           <Image src={require('../../asset/dag.png')} />
@@ -67,19 +67,19 @@ const Prices = () => {
             <a href="/" className="text-decoration-none text-dark pe-5">
               BUYING RATE
             </a>
-            <hr className="w-20" />
+            <hr className="w-20 price-hr" />
           </div>
           <div>
             <a href="/" className="text-decoration-none text-dark ps-5">
               SELLING RATE
             </a>
-            <hr className="w-20 ms-5" />
+            <hr className="w-20 ms-5 price-hr" />
           </div>
         </div>
 
         {/* ---------Main Calculation Part Starts---------------- */}
 
-        <div className="d-flex border p-4 justify-content-between align-items-center flex-wrap">
+        <div className="d-flex border-price p-4 justify-content-between align-items-center flex-wrap">
           <ButtonGroup aria-label="Basic example">
             <Button
               className="btn-group1"
@@ -171,7 +171,7 @@ const Prices = () => {
 
         {/* ---------Cards---------------- */}
 
-        <div className="d-flex justify-content-between my-5 flex-wrap">
+        <div className="d-flex justify-content-between my-5 flex-wrap busy">
           {/* ---------Bitcoin Card---------------- */}
 
           <div className="benefit-div p-3 m-1 text-center">

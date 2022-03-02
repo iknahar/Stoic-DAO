@@ -7,8 +7,6 @@ import Benefit from '../Benefit/Benefit';
 import Footer from '../Footer/Footer';
 import LatestBlog from '../LatestBlog/LatestBlog';
 import ProductDetails from '../ProductDetails/ProductDetails';
-import Expert from '../Expert/Expert';
-import Trending from '../Trending/Trending';
 import Token from '../Token/Token';
 import Roadmap from '../Roadmap/Roadmap';
 import Contact from '../Contact/Contact';
@@ -79,19 +77,16 @@ const Home = () => {
         </div>
       </div>
       <LogoSec />
-     
-     <AboutUs />
+
+      <AboutUs />
       <Benefit />
       <ProductDetails />
       <Roadmap />
-      <Expert />
       <Token />
       <Prices />
-      <Trending />
-
       <LatestBlog />
       <Contact />
-    
+
       <Footer />
     </div>
   );

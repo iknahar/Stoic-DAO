@@ -70,3 +70,9 @@ button:not(:disabled) {
   line-height: 20px;
   color: #49496f;
 }
+.price-hr{
+  color: black !important;
+}
+.border-price{
+  border: 1px solid black;
+}

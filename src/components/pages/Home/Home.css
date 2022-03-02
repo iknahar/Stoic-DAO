@@ -2,13 +2,13 @@
 .hero-bg {
   background: url(../../asset/herosection.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .nav-btn {
   width: 130px;
   height: 40px;
-  background-color: #4fd3d3 !important;
-  color: white;
+  background-color: #080808 !important;
+  color: #808080 !important;
   border: none !important;
   border-radius: 4px !important;
 }
@@ -29,6 +29,9 @@
    padding: 15rem;
   }
   .middlenav{
-    margin-left: 14rem;
+    margin-left: 246px;
+  }
+  .hero-bg{
+    background-size: cover;
   }
 }

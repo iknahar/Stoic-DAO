@@ -16,7 +16,7 @@ const Token = () => {
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
       <Container>
-        <div className="my-5 text-center">
+        <div className=" text-center">
           <Image src={require('../../asset/token.png')} alt="" className='w-65 pb-5' />
         </div>
       </Container>

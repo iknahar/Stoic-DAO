@@ -2,7 +2,7 @@ import React from 'react'
 
 const Menu = () => {
   return (
-    <div className="d-flex justify-content-between flex-wrap">
+    <div className="d-flex justify-content-between flex-wrap busy">
     
       <div className="benefit-div p-3 m-1 text-center">
         <img src={require("../../asset/Vector (2).png")} alt="" />

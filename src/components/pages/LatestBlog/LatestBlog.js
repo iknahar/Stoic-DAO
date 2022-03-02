@@ -15,7 +15,7 @@ const LatestBlog = () => {
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
 
-      <div className='d-flex justify-content-between flex-wrap mx-5'>
+      <div className='d-flex justify-content-between flex-wrap mx-5 busy'>
       <div className="card " style={{ width: '320px' }}>
         <Image
           src={require('../../asset/card/blenderfileeblenderproject-2curencies-symboltree-currencies-moneybag-symbols-coinsblend.png')}

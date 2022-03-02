@@ -5,6 +5,7 @@ import './AboutUs.css';
 const AboutUs = () => {
   return (
     <div className="py-5 about-bg">
+      <div className='container'>
       <p className="title text-center">about us</p>
       <div className="dag">
         <Image src={require('../../asset/dag.png')} />
@@ -15,8 +16,8 @@ const AboutUs = () => {
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
 
-      <div className="container d-flex align-items-center">
-        <div className="row">
+      <div className=" d-flex align-items-center">
+        <div className="row gs-5">
           <div className="col-md-6">
             <h3 className="title">What is cryptona?</h3>
             <p className="text2">
@@ -57,6 +58,7 @@ const AboutUs = () => {
             />
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

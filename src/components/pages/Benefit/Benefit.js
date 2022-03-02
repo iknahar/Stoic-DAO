@@ -58,16 +58,17 @@ const Benefit = () => {
         <br />
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
-      <Box sx={{ width: "100%" }}>
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+      <Box sx={{ width: "100%"  }}>
+        <Box sx={{ borderBottom: 1, borderColor: "black"  }}>
           <div className="tab-div">
           <Tabs
             value={value}
             onChange={handleChange}
             aria-label="basic tabs example"
+           
           >
-            <Tab label="Business" {...a11yProps(0)} />
-            <Tab label="Menu" {...a11yProps(1)} />
+            <Tab label="Business" {...a11yProps(0)}  sx={{color:'black'}}/>
+            <Tab label="Menu" {...a11yProps(1)}  sx={{color:'black'}} />
           </Tabs>
           </div>
         </Box>
