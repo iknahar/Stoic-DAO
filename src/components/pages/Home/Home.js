@@ -79,7 +79,8 @@ const Home = () => {
         </div>
       </div>
       <LogoSec />
-      <AboutUs />
+     
+     <AboutUs />
       <Benefit />
       <ProductDetails />
       <Roadmap />
@@ -90,6 +91,7 @@ const Home = () => {
 
       <LatestBlog />
       <Contact />
+    
       <Footer />
     </div>
   );

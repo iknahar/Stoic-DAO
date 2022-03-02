@@ -13,7 +13,7 @@ function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
-    <div
+    <div 
       role="tabpanel"
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
@@ -47,7 +47,8 @@ const Benefit = () => {
     setValue(newValue);
   };
   return (
-    <div className="container mb-5">
+    <div className="about-bg p-5">
+      <div className="container ">
       <p className="title text-center">Benefits of Using Our Solution</p>
       <div className="dag">
         <Image src={require("../../asset/dag.png")} />
@@ -77,6 +78,7 @@ const Benefit = () => {
           <Menu />
         </TabPanel>
       </Box>
+    </div>
     </div>
   );
 };

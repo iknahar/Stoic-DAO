@@ -46,7 +46,8 @@ const Expert = () => {
     setValue(newValue);
   };
   return (
-    <div className="container mb-5">
+   <div className="about-bg">
+      <div className="container mb-5">
       <p className="title text-center">OUR EXPART TEAM MEMBER</p>
       <div className="dag">
         <Image src={require("../../asset/dag.png")} />
@@ -773,6 +774,7 @@ const Expert = () => {
         </TabPanel>
       </Box>
     </div>
+   </div>
   );
 };
 

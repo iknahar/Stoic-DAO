@@ -7,12 +7,12 @@ import {
   Image,
   InputGroup,
 } from 'react-bootstrap';
-import FormCheckInput from 'react-bootstrap/esm/FormCheckInput';
+
 import './Contact.css';
 
 const Contact = () => {
   return (
-    <div>
+    <div className="about-bg p-5">
       <p className="title text-center">Contact Us</p>
       <div className="dag"></div>
 
@@ -202,7 +202,8 @@ const Contact = () => {
                 </InputGroup>
                 <Button className="submitbtn ms-5 px-4 py-2 my-3">
                   Submit Message
-                  <svg className='ms-3'
+                  <svg
+                    className="ms-3"
                     width="15"
                     height="15"
                     viewBox="0 0 15 15"

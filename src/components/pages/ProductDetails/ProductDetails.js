@@ -1,6 +1,5 @@
 import React from "react";
-import { Button, Image } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import {  Image } from "react-bootstrap";
 import One from "./One";
 import "./ProductDetails.css";
 import Three from "./Three";
@@ -49,7 +48,8 @@ const ProductDetails = () => {
     setValue(newValue);
   };
   return (
-    <div className="mb-5 container">
+   <div className="about-bg p-5">
+      <div className="container">
       <p className="title text-center">Product Details</p>
       <div className="dag">
         <Image src={require("../../asset/dag.png")} />
@@ -62,7 +62,8 @@ const ProductDetails = () => {
       
       <Box sx={{ width: "100%" }}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <Tabs
+         <div className="tab-div">
+         <Tabs
             value={value}
             onChange={handleChange}
             aria-label="basic tabs example"
@@ -71,6 +72,7 @@ const ProductDetails = () => {
             <Tab label="Two" {...a11yProps(1)} />
             <Tab label="Three" {...a11yProps(2)} />
           </Tabs>
+         </div>
         </Box>
         <TabPanel value={value} index={0}>
           <One/>
@@ -83,6 +85,7 @@ const ProductDetails = () => {
         </TabPanel>
       </Box>
     </div>
+   </div>
   );
 };
 

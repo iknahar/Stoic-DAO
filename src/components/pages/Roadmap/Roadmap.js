@@ -4,7 +4,7 @@ import './Roadmap.css';
 
 const Roadmap = () => {
   return (
-    <div className='p-5'>
+    <div className='p-5 about-bg'>
       <p className="title text-center">Roadmap to Success</p>
       <div className="dag">
         <Image src={require('../../asset/dag.png')} />

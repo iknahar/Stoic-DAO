@@ -3,7 +3,8 @@ import { Image } from 'react-bootstrap';
 
 const LatestBlog = () => {
   return (
-    <div className="container mb-5">
+    <div className="about-bg p-5">
+      <div className="container mb-5">
       <p className="title text-center">Latest Blog Posts on Cryptocurrency</p>
       <div className="dag">
         <Image src={require('../../asset/dag.png')} />
@@ -14,7 +15,7 @@ const LatestBlog = () => {
         aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
       </p>
 
-      <div className='d-flex justify-content-between mx-5'>
+      <div className='d-flex justify-content-between flex-wrap mx-5'>
       <div className="card " style={{ width: '320px' }}>
         <Image
           src={require('../../asset/card/blenderfileeblenderproject-2curencies-symboltree-currencies-moneybag-symbols-coinsblend.png')}
@@ -91,6 +92,7 @@ const LatestBlog = () => {
         </div>
       </div>
       </div>
+    </div>
     </div>
   );
 };
