@@ -51,7 +51,7 @@ const Benefit = () => {
       <div className="container ">
       <p className="title text-center">Benefits of Using Our Solution</p>
       <div className="dag">
-        <Image src={require("../../asset/dag.png")} />
+      <Image src={require('../../asset/dagblack.jpeg')} />
       </div>
       <p className="text2 text-center pb-3">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum{" "}

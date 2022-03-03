@@ -55,8 +55,8 @@ const Prices = () => {
       <div className="container ">
         <p className="title text-center">Find the Best Cryptocurrency Prices</p>
         <div className="dag">
-          <Image src={require('../../asset/dag.png')} />
-        </div>
+      <Image src={require('../../asset/dagblack.jpeg')} />
+      </div>
         <p className="text2 text-center pb-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum{' '}
           <br />

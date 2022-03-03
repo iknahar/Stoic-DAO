@@ -7,7 +7,7 @@ const LatestBlog = () => {
       <div className="container mb-5">
       <p className="title text-center">Latest Blog Posts on Cryptocurrency</p>
       <div className="dag">
-        <Image src={require('../../asset/dag.png')} />
+      <Image src={require('../../asset/dagblack.jpeg')} />
       </div>
       <p className="text2 text-center pb-3">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum{' '}
