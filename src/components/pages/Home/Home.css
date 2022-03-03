@@ -15,7 +15,12 @@
 .content-bg {
   padding: 130px;
 }
-.logo-div {
+.navbar-nav a{
+  color: black;
+  margin-left: 2rem;
+}
+.navbar-nav a:hover{
+  color:grey;
 }
 
 .title1 {
