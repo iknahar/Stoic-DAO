@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import { Image, Button } from 'react-bootstrap';
+import { Image, Button, Navbar, Container } from 'react-bootstrap';
 import LogoSec from '../LogoSec/LogoSec';
 import AboutUs from '../AboutUs/AboutUs';
 import Benefit from '../Benefit/Benefit';
@@ -11,13 +11,13 @@ import Token from '../Token/Token';
 import Roadmap from '../Roadmap/Roadmap';
 import Contact from '../Contact/Contact';
 import Prices from '../Prices/Prices';
-
+import { Nav } from 'react-bootstrap';
 
 const Home = () => {
   return (
     <div>
       <div className="hero-bg ">
-        <nav class="navbar navbar-expand-lg  ">
+        {/* <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
             <a class="navbar-brand" href="/">
               <Image src={require('../../asset/logo.png')} />
@@ -68,8 +68,43 @@ const Home = () => {
                 <Button className="nav-btn ms-3">Buy Token</Button>
               </div>
             </div>
-          </div>
-        </nav>
+            </div>
+        </nav> */}
+
+        {/* ---------------- react Navbar ---------------- */}
+
+        <Navbar
+          expand="lg"
+          className="navbar navbar-expand-lg"
+        >
+          <Container>
+            <div className="logo-div">
+              <Navbar.Brand href="#home">
+                <Image
+                  className="pe-3"
+                  src={require('../../asset/logo.png')}
+                  style={{ height: '49px' }}
+                />{' '}
+              </Navbar.Brand>
+            </div>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto ">
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#home">About</Nav.Link>
+                <Nav.Link href="#features">Features</Nav.Link>
+                <Nav.Link href="#features">Product</Nav.Link>
+                <Nav.Link href="#pricing">Roadmap</Nav.Link>
+                <Nav.Link href="#pricing">Team</Nav.Link>
+                <Nav.Link href="#pricing">Token</Nav.Link>
+                <Nav.Link href="#pricing">Blog</Nav.Link>
+                <Nav.Link href="#pricing">Contact</Nav.Link>
+                <Button className="nav-btn ms-3">Buy Token</Button>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
 
         {/* Hero section  */}
         <div className="container content-bg">
