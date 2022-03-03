@@ -8,7 +8,7 @@ const AboutUs = () => {
       <div className='container'>
       <p className="title text-center">about us</p>
       <div className="dag">
-        <Image src={require('../../asset/dag.png')} />
+        <Image src={require('../../asset/dagblack.jpeg')} />
       </div>
       <p className="text2 text-center pb-3">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum{' '}
