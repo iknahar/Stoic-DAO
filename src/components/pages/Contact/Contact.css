@@ -17,3 +17,22 @@
     border: none!important;
     outline: none!important;
 }
+.btn-primary{
+    background-color: #4FD3D3 !important;
+    border: none !important;
+}
+.text-area{
+    padding: 4rem !important;
+    background-color: transparent !important;
+    border: 1px solid #9683DE !important;
+}
+.input-div input{
+    background-color: transparent !important;
+    border: 1px solid #9683DE !important;
+}
+.text-area::placeholder{
+   font-size: 1rem;
+}
+.contact-border{
+    border: 1px solid #9683DE;
+}

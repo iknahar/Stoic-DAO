@@ -1,6 +1,6 @@
-import React from 'react';
-import './Footer.css';
-import { Image } from 'react-bootstrap';
+import React from "react";
+import "./Footer.css";
+import { Image } from "react-bootstrap";
 
 const Footer = () => {
   return (
@@ -8,10 +8,15 @@ const Footer = () => {
       <div className="container">
         <div className="d-flex justify-content-between flex-wrap">
           <div className="">
-            <Image src={require('../../asset/logo.png')} alt="logo image" />
-            <p>
-              Sed diam nonumy eirmod tempor <br /> Invidunt ut labore et dolore.
-            </p>
+            <div className="mb-4">
+              <Image src={require("../../asset/logo.png")} alt="logo image" />
+            </div>
+            
+              <p  className="mb-3">
+                Sed diam nonumy eirmod tempor <br /> Invidunt ut labore et
+                dolore.
+              </p>
+            
             <div className="d-flex">
               <div>
                 <svg
@@ -212,7 +217,6 @@ const Footer = () => {
                 </svg>
               </div>
               <div>
-                
                 <svg
                   width="41"
                   height="41"

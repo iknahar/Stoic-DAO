@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Button,
   Dropdown,
@@ -6,9 +6,9 @@ import {
   FormControl,
   Image,
   InputGroup,
-} from 'react-bootstrap';
+} from "react-bootstrap";
 
-import './Contact.css';
+import "./Contact.css";
 
 const Contact = () => {
   return (
@@ -19,29 +19,29 @@ const Contact = () => {
       <div className="container">
         <div className="row p-3">
           <div className="col-md-3">
-            <Image src={require('../../asset/contact.png')} />
+            <Image src={require("../../asset/contact.png")} />
             <h4 className="mt-3 ms-5">Contact Info</h4>
             <div className="dag mt-1">
-              <Image src={require('../../asset/dag.png')} />
+              <Image src={require("../../asset/dag.png")} />
             </div>
 
             <div className="phone d-flex align-items-center ">
-              <Image src={require('../../asset/contact/email.png')} />
+              <Image src={require("../../asset/contact/email.png")} />
               <p className="mt-2">info@CRYPTONA.com</p>
             </div>
 
             <div className="phone d-flex align-items-center">
-              <Image src={require('../../asset/contact/map.png')} />
+              <Image src={require("../../asset/contact/map.png")} />
               <p className="mt-2">+444 736 6487</p>
             </div>
             <div className="phone d-flex align-items-center">
-              <Image src={require('../../asset/contact/phone.png')} />
+              <Image src={require("../../asset/contact/phone.png")} />
               <p className="mt-2">A88 Whitby Road London, UK</p>
             </div>
             {/* ---------------Social -------------------- */}
             <div className="d-flex align-items-center justify-content-between mt-2">
               <div>
-                <small>SOCIAL NETWORK</small>
+                <small style={{fontSize:'12px'}}>SOCIAL NETWORK</small>
               </div>
               <div className="icons align-self-center">
                 <span className="m-1">
@@ -123,36 +123,47 @@ const Contact = () => {
                 </span>
               </div>
             </div>
+            <Button className="submitbtn mt-5">
+            <svg
+                width="11"
+                height="17"
+                viewBox="0 0 11 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.87703 7.9296C7.32328 7.9296 8.4999 6.75313 8.4999 5.30707C8.4999 3.86101 7.32328 2.68457 5.87703 2.68457C4.43078 2.68457 3.25415 3.86101 3.25415 5.30707C3.25415 6.75313 4.43078 7.9296 5.87703 7.9296ZM5.87703 3.62195C6.80634 3.62195 7.5624 4.37791 7.5624 5.30707C7.5624 6.23626 6.80637 6.99223 5.87703 6.99223C4.94768 6.99223 4.19165 6.23626 4.19165 5.30707C4.19165 4.37791 4.94771 3.62195 5.87703 3.62195Z"
+                  fill="#F5F5FF"
+                />
+                <path
+                  d="M3.0212 10.0197C3.73167 10.9815 3.44623 10.6075 5.49264 13.5292C5.67864 13.7958 6.07417 13.797 6.26123 13.5296C8.31689 10.594 8.03404 10.9658 8.73295 10.0197C9.44092 9.06119 10.173 8.07006 10.5742 6.90863C11.1549 5.22734 10.9039 3.56381 9.86755 2.22444C9.86751 2.22444 9.86751 2.22441 9.86748 2.22441C8.91817 0.997875 7.42642 0.265625 5.87708 0.265625C4.32773 0.265625 2.83598 0.997875 1.88664 2.22447C0.850294 3.56384 0.599294 5.22741 1.17998 6.90869C1.58111 8.07009 2.31323 9.06122 3.0212 10.0197ZM2.62808 2.79809C3.40114 1.79931 4.61573 1.203 5.87708 1.203C7.13842 1.203 8.35301 1.79931 9.12608 2.79809L9.12601 2.79806C9.96248 3.87906 10.162 5.23025 9.68804 6.60269C9.3337 7.62856 8.64492 8.56103 7.97883 9.46281C7.4602 10.1649 7.61542 9.95016 5.87708 12.442C4.14054 9.95266 4.29379 10.1647 3.77533 9.46281C3.10923 8.56103 2.42045 7.62853 2.06611 6.60269C1.59211 5.23022 1.79167 3.87906 2.62808 2.79809Z"
+                  fill="#F5F5FF"
+                />
+                <path
+                  d="M3.40622 12.0524C3.26797 11.8336 2.97847 11.7682 2.7596 11.9065L1.42679 12.7483C1.13604 12.9319 1.13575 13.357 1.42679 13.5408L5.62679 16.1935C5.77969 16.2901 5.97457 16.2901 6.12744 16.1935L10.3274 13.5408C10.6182 13.3572 10.6185 12.9321 10.3274 12.7483L8.99463 11.9065C8.77569 11.7682 8.48622 11.8336 8.34801 12.0524C8.20972 12.2713 8.2751 12.5607 8.49397 12.699L9.19941 13.1445L5.8771 15.2429L2.55482 13.1445L3.26026 12.699C3.47913 12.5608 3.54447 12.2713 3.40622 12.0524Z"
+                  fill="#F5F5FF"
+                />
+              </svg> &nbsp;
+              View Map
+             
+            </Button>
           </div>
 
           <div className="col-md-9">
-            <div className="border pb-5">
+            <div className="contact-border pb-5">
               <h6 className="text-center mt-5 mb-2">Leave Us a Message</h6>
 
               {/* ----------------------input group 1------------------------------------ */}
               <div>
-                <InputGroup className="px-5 pt-5 pb-4">
+                <InputGroup className="px-5 pt-5 pb-4 input-div">
                   <FormControl
                     aria-label="Text input with dropdown button"
                     placeholder="- SELECT SERVICE -"
+                    className="input"
                   />
 
                   <DropdownButton
-                    variant="outline-secondary"
-                    title={
-                      <svg
-                        width="13"
-                        height="8"
-                        viewBox="0 0 13 8"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10.6026 0.241211H11.9526C12.0659 0.241211 12.1276 0.37454 12.0526 0.461203L6.52277 6.83597C6.47277 6.89365 6.41096 6.93992 6.34152 6.97162C6.27207 7.00333 6.19663 7.01974 6.12029 7.01974C6.04395 7.01974 5.96851 7.00333 5.89906 6.97162C5.82962 6.93992 5.76781 6.89365 5.7178 6.83597L0.186339 0.461203C0.111342 0.376206 0.173006 0.241211 0.286335 0.241211H1.63629C1.71462 0.241211 1.78795 0.274543 1.83795 0.332874L5.48615 4.53772C5.89906 4.95064 6.21991 5.07057 6.75277 4.53772L10.401 0.332874C10.4526 0.274543 10.526 0.241211 10.6026 0.241211Z"
-                          fill="white"
-                        />
-                      </svg>
-                    }
+                    className="drop-btn"
                     id="input-group-dropdown-2"
                     align="end"
                   >
@@ -163,23 +174,24 @@ const Contact = () => {
                     <Dropdown.Item href="#">Separated link</Dropdown.Item>
                   </DropdownButton>
                 </InputGroup>
-                <InputGroup className="px-5">
+                <InputGroup className="px-5 input-div">
                   <FormControl
-                    className="me-4"
+                    className="me-4 input"
                     aria-label="Default"
                     aria-describedby="inputGroup-sizing-default"
-                    placeholder="   First Name"
+                    placeholder="  First Name"
                   />
                   <FormControl
                     aria-label="Default"
                     aria-describedby="inputGroup-sizing-default"
                     placeholder="   Last name"
+                    className="input"
                   />
                 </InputGroup>
 
-                <InputGroup className="px-5 py-4">
+                <InputGroup className="px-5 py-4 input-div">
                   <FormControl
-                    className="me-4"
+                    className="me-4 input"
                     aria-label="Default"
                     aria-describedby="inputGroup-sizing-default"
                     placeholder="   Phone"
@@ -188,16 +200,18 @@ const Contact = () => {
                     aria-label="Default"
                     aria-describedby="inputGroup-sizing-default"
                     placeholder="   Email"
+                    className="input"
                   />
                 </InputGroup>
 
-                <InputGroup className="px-5 pb-4">
+                <InputGroup className="px-5 pb-4 input-div">
                   <FormControl
                     as="textarea"
-                    className=""
+                    className="text-area input"
                     aria-label="Default"
                     aria-describedby="inputGroup-sizing-default"
-                    placeholder="   Type Your Message"
+                    placeholder="Type Your Message"
+                    
                   />
                 </InputGroup>
                 <Button className="submitbtn ms-5 px-4 py-2 my-3">
