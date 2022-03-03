@@ -89,18 +89,20 @@ const Home = () => {
             </div>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto ">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#home">About</Nav.Link>
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#features">Product</Nav.Link>
-                <Nav.Link href="#pricing">Roadmap</Nav.Link>
-                <Nav.Link href="#pricing">Team</Nav.Link>
-                <Nav.Link href="#pricing">Token</Nav.Link>
-                <Nav.Link href="#pricing">Blog</Nav.Link>
-                <Nav.Link href="#pricing">Contact</Nav.Link>
-                <Button className="nav-btn ms-3">Buy Token</Button>
+              <Nav >
+                <Nav.Link className="navlink" href="#home">Home</Nav.Link>
+                <Nav.Link className="navlink" href="#home">Home</Nav.Link>
+                <Nav.Link className="navlink" href="#home">About</Nav.Link>
+                <Nav.Link className="navlink" href="#features">Features</Nav.Link>
+                <Nav.Link className="navlink" href="#features">Product</Nav.Link>
+                <Nav.Link className="navlink" href="#pricing">Roadmap</Nav.Link>
+                <Nav.Link className="navlink" href="#pricing">Team</Nav.Link>
+                <Nav.Link className="navlink" href="#pricing">Token</Nav.Link>
+                <Nav.Link className="navlink" href="#pricing">Blog</Nav.Link>
+                <Nav.Link className="navlink" href="#pricing">Contact</Nav.Link>
+              <div className="ms-5">
+              <Button className="nav-btn">Buy Token</Button>
+              </div>
               </Nav>
             </Navbar.Collapse>
           </Container>
