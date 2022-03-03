@@ -14,7 +14,14 @@ const Contact = () => {
   return (
     <div className="about-bg p-5">
       <p className="title text-center">Contact Us</p>
-      <div className="dag"></div>
+      <div className="dag-div w-20">
+        
+      </div>
+      <p className="text2 text-center py-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum{" "}
+        <br />
+        aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus
+      </p>
 
       <div className="container">
         <div className="row p-3">

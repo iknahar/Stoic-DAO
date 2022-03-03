@@ -36,3 +36,11 @@
 .contact-border{
     border: 1px solid #9683DE;
 }
+.dag-div{
+    border: 1px solid black;
+    margin-left: 48rem;
+    margin-top: 1rem;
+}
+.w-20{
+    width: 15%;
+}

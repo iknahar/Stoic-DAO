@@ -75,7 +75,7 @@ const Home = () => {
 
         <Navbar
           expand="lg"
-          className="navbar navbar-expand-lg"
+          className="navbar navbar-expand-lg pt-4"
         >
           <Container>
             <div className="logo-div">
