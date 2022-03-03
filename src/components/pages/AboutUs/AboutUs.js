@@ -48,7 +48,7 @@ const AboutUs = () => {
               </li>
             </ul>
 
-            <Button className="nav-btn">Read More</Button>
+            <Button className="nav-btn mt-3">Read More</Button>
           </div>
 
           <div className="col-md-6">

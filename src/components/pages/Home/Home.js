@@ -18,26 +18,29 @@ const Home = () => {
       <div className="hero-bg justify-content-center">
         <Container>
           <Navbar expand="lg" className="middlenav">
-            <Navbar.Brand href="#home">
+           <div className="logo-div">
+           <Navbar.Brand href="#home">
               <Image
-                className="px-2"
+                className="pe-5 "
                 src={require('../../asset/logo.png')}
                 style={{ height: '49px' }}
               />{' '}
             </Navbar.Brand>
+           </div>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#home">About</Nav.Link>
+              <Nav className="me-auto ">
+                <Nav.Link href="#home"  >Home</Nav.Link>
+                <Nav.Link href="#home"  >Home</Nav.Link>
+                <Nav.Link href="#home" >About</Nav.Link>
                 <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#features">Product</Nav.Link>
-                <Nav.Link href="#pricing">Roadmap</Nav.Link>
-                <Nav.Link href="#pricing">Team</Nav.Link>
-                <Nav.Link href="#pricing">Token</Nav.Link>
-                <Nav.Link href="#pricing">Blog</Nav.Link>
-                <Nav.Link href="#pricing">Contact</Nav.Link>
-                <Button className="nav-btn">Buy Token</Button>
+                <Nav.Link href="#features" >Product</Nav.Link>
+                <Nav.Link href="#pricing" >Roadmap</Nav.Link>
+                <Nav.Link href="#pricing" >Team</Nav.Link>
+                <Nav.Link href="#pricing" >Token</Nav.Link>
+                <Nav.Link href="#pricing" >Blog</Nav.Link>
+                <Nav.Link href="#pricing" >Contact</Nav.Link>
+                <Button className="nav-btn ms-3">Buy Token</Button>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -54,12 +57,12 @@ const Home = () => {
             </b>
           </h1>
           <p className="text2 my-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum
-            aliquet <br />
-            turpis elit elit natoque varius eget facilisi. Amet rhoncus sed
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Leo ipsum
+            aliquet 
+            turpis elit elit natoque varius eget facilisi.<br /> Amet rhoncus sed
             nulla tristique
             <br />
-            aenean viverra urna nec. Dapibus nascetur amet lacinia et placerat
+            aenean viverra urna nec. Dapibus nascetur amet <br />lacinia et placerat
             nibh.
           </p>
           <div className="d-flex">

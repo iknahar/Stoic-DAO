@@ -7,16 +7,18 @@
 .nav-btn {
   width: 130px;
   height: 40px;
-  background-color: #080808 !important;
-  color: #808080 !important;
-  border: none !important;
+  background-color: #fbfbfb !important;
+  color: black !important;
+  border: 2px solid black !important;
   border-radius: 4px !important;
 }
-.content-bg{
-    padding: 130px;
+.content-bg {
+  padding: 130px;
+}
+.logo-div {
 }
 
-.title1{
+.title1 {
   font-weight: 800;
   font-size: 36px;
   line-height: 40px;
@@ -25,13 +27,13 @@
   font-family: 'Montserrat', sans-serif;
 }
 @media only screen and (max-width: 1920px) {
- .content-bg {
-   padding: 15rem;
+  .content-bg {
+    padding: 16rem;
   }
-  .middlenav{
+  .middlenav {
     margin-left: 246px;
   }
-  .hero-bg{
+  .hero-bg {
     background-size: cover;
   }
 }
