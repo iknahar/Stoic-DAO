@@ -91,11 +91,11 @@ const Home = () => {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav >
                 <Nav.Link className="navlink" href="#home">Home</Nav.Link>
-                <Nav.Link className="navlink" href="#home">Home</Nav.Link>
                 <Nav.Link className="navlink" href="#home">About</Nav.Link>
                 <Nav.Link className="navlink" href="#features">Features</Nav.Link>
                 <Nav.Link className="navlink" href="#features">Product</Nav.Link>
                 <Nav.Link className="navlink" href="#pricing">Roadmap</Nav.Link>
+                <Nav.Link className="navlink" href="#home">Product</Nav.Link>
                 <Nav.Link className="navlink" href="#pricing">Team</Nav.Link>
                 <Nav.Link className="navlink" href="#pricing">Token</Nav.Link>
                 <Nav.Link className="navlink" href="#pricing">Blog</Nav.Link>
